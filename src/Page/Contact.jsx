@@ -58,7 +58,7 @@ function Contact() {
     try {
       setloader(true);
       axios
-        .post("http://localhost:1700/auth/contactpage", formdata)
+        .post("https://digitalden-backend-lq55.onrender.com/auth/contactpage", formdata)
         .then((res) => {
           console.log("Submited", res.data);
           setformdata({ fullname: "", email: "", message: "" });
