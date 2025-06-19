@@ -32,7 +32,7 @@ function Home({ onAddSuccess }) {
       rate: product.rating.rate,
     };
     axios
-      .post("http://localhost:1700/auth/products", cartItem)
+      .post("https://digitalden-backend-lq55.onrender.com/auth/products", cartItem)
       .then((res) => {
         console.log("Added", res.data);
         onAddSuccess();
