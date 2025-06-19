@@ -30,7 +30,7 @@ function Navbar({ cartData, onCartUpdate }) {
   const handledelete = (id) => {
     setremoveloader(true);
     axios
-      .delete(`http://localhost:1700/auth/deleteproducts/${id}`)
+      .delete(`https://digitalden-backend-lq55.onrender.com/auth/deleteproducts/${id}`)
       .then((res) => {
         setremoveloader(false);
         console.log("delete", res.data);
