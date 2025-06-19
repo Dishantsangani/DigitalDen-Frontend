@@ -87,7 +87,7 @@ function Payment({ cartData }) {
 
     try {
       setloader(true);
-      const response = await axios.post("http://localhost:1700/auth/checkout");
+      const response = await axios.post("https://digitalden-backend-lq55.onrender.com/auth/checkout");
       setloader(false);
       if (response && response.status === 200) {
         window.location.href = response.data.url;
