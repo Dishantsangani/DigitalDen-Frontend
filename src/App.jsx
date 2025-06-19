@@ -16,7 +16,7 @@ function App() {
   // Navbar Drawer Api Calling
   const fetchCartData = async () => {
     try {
-      const res = await axios.get("http://localhost:1700/auth/getproducts");
+      const res = await axios.get("https://digitalden-backend-lq55.onrender.com/auth/getproducts");
       setCartData(res.data);
     } catch (err) {
       console.log("fetch error", err);
